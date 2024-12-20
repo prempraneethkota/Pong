@@ -89,6 +89,14 @@ class SimpleDuelingDQN(nn.Module):
         val = self.fc_val(x).expand(x.size(0), adv.size(1))
         return val + adv - adv.mean(1, keepdim=True).expand(x.size(0), adv.size(1))
 ```
+## Hyperparameters
+- learning_rate: Learning rate for the optimizer.
+- gamma: Discount factor for the reward.
+- epsilon: Exploration rate for the epsilon-greedy policy.
+- batch_size: Batch size for training.
+- memory_size: Size of the experience replay memory.
+- episodes: Number of episodes for training.
+These hyperparameters can be fine tuned for further traing of the model.
 ## Results
 The results of the training are plotted and saved, showing the total rewards per episode. Here's an example of how to include graphs in your results:
 ```python
@@ -102,5 +110,6 @@ plt.title('Total Rewards per Episode')
 plt.show()
 ```
 ![Figure_3](https://github.com/user-attachments/assets/9d50cd7e-5c52-461c-b45f-1ffcc79edbb8)
+```ssh
 Graph shows traing rewards using duel DQN for 500 plays using pong2.py.
-
+```
