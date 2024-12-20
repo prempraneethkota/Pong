@@ -1,0 +1,5 @@
+gymnasium~=1.0.0
+torch~=2.5.1+cu124
+matplotlib~=3.8.2
+numpy~=1.26.3
+opencv-python~=4.10.0.84
