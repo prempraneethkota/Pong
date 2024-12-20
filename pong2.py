@@ -77,12 +77,12 @@ print(f"Number of Actions: {num_actions}")
 # Hyperparameters
 learning_rate = 0.0001
 gamma = 0.99
-epsilon = .003
+epsilon = 1
 epsilon_decay = 0.99
 epsilon_min = 0.001
-batch_size = 32
-memory_size = 2000
-episodes = 100
+batch_size = 64
+memory_size = 5000
+episodes = 500
 
 device = torch.device("cuda")
 

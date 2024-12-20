@@ -56,7 +56,7 @@ print(f"Number of Actions: {num_actions}")
 # Hyperparameters
 learning_rate = 0.00025
 gamma = 0.99
-epsilon = 0.1
+epsilon = 1
 epsilon_decay = 0.0003
 epsilon_min = 0.01
 batch_size = 64
